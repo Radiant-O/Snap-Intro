@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Components */
+.header{
+    @apply flex sm:justify-between lg:justify-start items-center sm:px-6 sm:py-5 lg:px-16 lg:py-6 lg:space-x-12
+}
+.menu_icon{
+    @apply lg:hidden cursor-pointer
+}
+.lhs{
+    @apply sm:hidden md:flex flex-row items-center space-x-[100%] w-[40%] 
+}
+.rhs{
+    @apply md:hidden sm:block absolute h-[100vh] bg-white ml-[30%] w-[60%] top-0 pt-3 px-6
+}
+.rhs .close_icon{
+    @apply py-4 mx-[90%] cursor-pointer
+}
+.rhs .mobile_nav{
+    @apply font-semibold text-gray-500 ease-in-out
+}
+.rhs .mobile_nav p{
+    @apply py-2 
+}
+.rhs .mobile_nav p:hover{
+    @apply text-black
+}
+.rhs .auth p{
+    @apply py-4 text-center
+}
+.nav{
+    @apply lg:space-x-7 font-semibold text-gray-500 ease-in-out flex sm:flex-col lg:flex-row 
+}
+
+.nav p:hover{
+    @apply text-black
+}
+.lhs .auth{
+    @apply flex flex-row items-center space-x-6 
+}
+.auth p{
+    @apply cursor-pointer font-semibold text-gray-500
+}
+.auth .log:hover{
+    @apply text-black
+}
+.regbtn{
+    @apply border px-3 py-2 rounded-lg 
+}
+.regbtn:hover{
+    @apply bg-slate-100 text-black border-gray-600 transition-all
+}
+
+/* Both Dropdown Components */
+.dropdown{
+    @apply lg:shadow-xl  lg:py-3 lg:border-none lg:rounded-lg lg:absolute lg:mt-4
+}
+.dropdown a{
+    @apply flex lg:items-center sm:items-start space-x-3 py-1 px-4 cursor-pointer
+}
+.dropdown a:hover{
+    @apply bg-slate-100
+}
+.both{
+    @apply lg:absolute lg:top-[2em] 
+}
+.company{
+    @apply lg:left-[20%] 
+}
+.ext{
+    @apply flex items-center space-x-1 cursor-pointer
+}
+
+/* Home Component */
+.main{
+    @apply flex lg:flex-row sm:flex-col-reverse sm:w-full lg:w-[80%] mx-auto sm:mt-2 lg:mt-8 justify-evenly 
+}
+.cta{
+    @apply sm:w-full lg:w-[80%] sm:mt-8 lg:mt-14 lg:pl-6 
+} 
+.cta_top_desktop{
+    @apply sm:hidden lg:block
+}
+.cta_head{
+    @apply sm:text-4xl lg:text-6xl font-[700] pb-3
+}
+.cta_top_desktop .cta_cont{
+    @apply text-gray-500 font-normal mt-11
+}
+.cta_top_desktop .cta_btn{
+    @apply border px-3 py-2 w-fit rounded-xl font-bold text-gray-500 mt-10
+}
+.cta_top_desktop .cta_btn:hover{
+    @apply border-gray-700 text-gray-700 bg-slate-100 transition-all
+}
+.cta_footer{
+    @apply flex sm:space-x-2 lg:space-x-5 items-center sm:mt-14 lg:mt-16 sm:w-full w-0 sm:mx-auto lg:mx-0 
+}
+.cta_footer img{
+    @apply sm:w-[5.4rem] lg:w-0 sm:px-2 lg:px-0
+}
+.hero{
+    @apply w-full
+}
+.hero_img_desktop{
+    @apply w-[60%] mx-[40%] sm:hidden lg:block
+}
+.cta_top_mobile{
+    @apply lg:hidden text-center px-3
+}
+.hero_img_mobile{
+    @apply lg:hidden w-[50%] mx-auto
+}
+.cta_top_mobile .cta_btn{
+    @apply border px-4 py-3 w-fit rounded-xl font-bold text-white mt-10 mx-auto bg-black cursor-pointer
+}
+.cta_top_mobile .cta_btn:hover{
+    @apply bg-white text-black border-black
+}
