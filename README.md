@@ -1,5 +1,8 @@
-# proj
+# Snap Landing Page
 
+## Made with Vuejs and Tailwind
+![Snap Home Page](SnapPage.png)
+![Snap Drop Down](Snapdropdown.png)
 
 ## Project setup
 ```
